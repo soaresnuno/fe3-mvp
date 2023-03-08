@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Box from "./components/shared/box";
+import Button from "./components/shared/button";
+import Typography from "./components/shared/typography";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Box
+        width={200}
+        height={200}
+        background="orangered"
+        borderColor="black"
+      />
+      <Typography
+        text="testasdasd"
+        fontColor="black"
+        fontSize={20}
+        fontWeight="thin"
+      />
+      <Button text="button1" onClick={() => alert("works")} />
     </div>
   );
 }
