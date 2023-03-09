@@ -4,3 +4,9 @@ export interface TypographyProps {
   text: string;
   fontColor?: string;
 }
+
+export type TypographyStylingProps = {
+  fontSize?: number;
+  fontWeight?: string | number;
+  fontColor?: string;
+};

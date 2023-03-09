@@ -6,4 +6,8 @@ export interface BoxTypes {
   width: number;
   height: number;
   children?: ReactNode;
+  position?: string;
+  overflow?: string;
+  top?: string;
+  left?: string;
 }
