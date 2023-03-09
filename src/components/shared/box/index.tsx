@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import { BoxTypes } from "./types";
 
 export default function Box({
@@ -6,7 +7,8 @@ export default function Box({
   background,
   borderColor,
   children,
-}: BoxTypes) {
+  ...rest
+}: BoxTypes & CSSProperties) {
   return (
     <div
       style={{
@@ -14,6 +16,7 @@ export default function Box({
         height: `${height}px`,
         background: `${background}`,
         border: `2px solid ${borderColor}`,
+        ...rest,
       }}
     >
       {children}
