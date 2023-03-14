@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 
 export interface BoxTypes {
   background: string;
@@ -10,4 +10,5 @@ export interface BoxTypes {
   overflow?: string;
   top?: string;
   left?: string;
+  style?: CSSProperties;
 }
